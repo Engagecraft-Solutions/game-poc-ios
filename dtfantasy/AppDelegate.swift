@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GamesLib
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let config : [String: Any] = ["languages": ["en"],
+                                      "api": "ec",
+                                      "grant": "auth0"]
+        GamingHubCards
+            .setupPOC(competition: GamingHubCompetitions.main.rawValue, environment: .integration, clientId: "DT_APP_IOS", config: config)
+        
         return true
     }
 
