@@ -23,7 +23,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		84388EB32F8D331200E83C9D /* Exceptions for "dtfantasy" folder in "POCfantasy" target */ = {
+		84388EB32F8D331200E83C9D /* Exceptions for "POCApp" folder in "POCfantasy" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -33,12 +33,12 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		84388EA32F8D331100E83C9D /* dtfantasy */ = {
+		84388EA32F8D331100E83C9D /* POCApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				84388EB32F8D331200E83C9D /* Exceptions for "dtfantasy" folder in "POCfantasy" target */,
+				84388EB32F8D331200E83C9D /* Exceptions for "POCApp" folder in "POCfantasy" target */,
 			);
-			path = dtfantasy;
+			path = POCApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -66,7 +66,7 @@
 		84388E982F8D331100E83C9D = {
 			isa = PBXGroup;
 			children = (
-				84388EA32F8D331100E83C9D /* dtfantasy */,
+				84388EA32F8D331100E83C9D /* POCApp */,
 				84388EC12F8D49B200E83C9D /* Frameworks */,
 				84388EA22F8D331100E83C9D /* Products */,
 			);
@@ -103,7 +103,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				84388EA32F8D331100E83C9D /* dtfantasy */,
+				84388EA32F8D331100E83C9D /* POCApp */,
 			);
 			name = POCfantasy;
 			packageProductDependencies = (
@@ -136,7 +136,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 84388E9C2F8D331100E83C9D /* Build configuration list for PBXProject "dtfantasy" */;
+			buildConfigurationList = 84388E9C2F8D331100E83C9D /* Build configuration list for PBXProject "POCApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -189,7 +189,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KAAD6CN23A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = dtfantasy/Info.plist;
+				INFOPLIST_FILE = POCApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -221,7 +221,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KAAD6CN23A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = dtfantasy/Info.plist;
+				INFOPLIST_FILE = POCApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -368,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84388E9C2F8D331100E83C9D /* Build configuration list for PBXProject "dtfantasy" */ = {
+		84388E9C2F8D331100E83C9D /* Build configuration list for PBXProject "POCApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84388EB72F8D331200E83C9D /* Debug */,

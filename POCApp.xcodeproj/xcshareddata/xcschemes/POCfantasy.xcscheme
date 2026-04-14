@@ -18,7 +18,7 @@
                BlueprintIdentifier = "84388EA02F8D331100E83C9D"
                BuildableName = "POCfantasy.app"
                BlueprintName = "POCfantasy"
-               ReferencedContainer = "container:dtfantasy.xcodeproj">
+               ReferencedContainer = "container:POCApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,7 +48,7 @@
             BlueprintIdentifier = "84388EA02F8D331100E83C9D"
             BuildableName = "POCfantasy.app"
             BlueprintName = "POCfantasy"
-            ReferencedContainer = "container:dtfantasy.xcodeproj">
+            ReferencedContainer = "container:POCApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -65,7 +65,7 @@
             BlueprintIdentifier = "84388EA02F8D331100E83C9D"
             BuildableName = "POCfantasy.app"
             BlueprintName = "POCfantasy"
-            ReferencedContainer = "container:dtfantasy.xcodeproj">
+            ReferencedContainer = "container:POCApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
