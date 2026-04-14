@@ -7,11 +7,10 @@
 
 import UIKit
 import GamesLib
+import Combine
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -21,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                       "grant": "auth0"]
         GamingHubCards
             .setupPOC(competition: GamingHubCompetitions.main.rawValue, environment: .integration, clientId: "DT_APP_IOS", config: config)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onGameLink(_:)), name: .ghOpenGameLink, object: nil)
         
         return true
     }
@@ -39,6 +40,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    @objc func onGameLink(_ notification: Notification){
+        print("HOST Got link from game to open: \(notification.userInfo?["link"] as? String ?? "-")")
+        if let link = notification.userInfo?["link"] as? String,
+           let url = URL(string: link),
+           UIApplication.shared.canOpenURL(url){
+           UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
 
 }
 

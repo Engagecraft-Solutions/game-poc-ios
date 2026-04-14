@@ -58,6 +58,11 @@ struct GameBody: View {
                         requestLogin()
                     }
                 }
+                
+                Spacer()
+                Button("Ask Host to open link"){
+                    openLink()
+                }
             }
             
         }
@@ -139,5 +144,10 @@ struct GameBody: View {
         if let path = data?["link"] as? String, let url = URL(string: path) {
             print("GAME DEEPLINK to process \(url.absoluteString)")
         }
+    }
+    
+    /// ask Host to open (process) the a link
+    func openLink(){
+        GamingHubCards.openDeepLink("https://dreamteam.com/en/article/id")
     }
 }
