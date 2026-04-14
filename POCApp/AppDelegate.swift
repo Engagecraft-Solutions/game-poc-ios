@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let config : [String: Any] = ["languages": ["en"],
-                                      "api": "ec",
+                                      "api": "dreamteam",
                                       "grant": "auth0"]
         GamingHubCards
-            .setupPOC(competition: GamingHubCompetitions.main.rawValue, environment: .integration, clientId: "DT_APP_IOS", config: config)
+            .setupPOC(competition: GamingHubCompetitions.main.rawValue, environment: .preproduction, clientId: "DT_APP_IOS", config: config)
         
         NotificationCenter.default.addObserver(self, selector: #selector(onGameLink(_:)), name: .ghOpenGameLink, object: nil)
         

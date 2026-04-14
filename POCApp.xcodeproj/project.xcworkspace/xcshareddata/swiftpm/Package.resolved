@@ -1,5 +1,5 @@
 {
-  "originHash" : "acd9c2b13fe0d264eb3cce7f60787890d24c78ffdacd9a76732bb062f3ab158a",
+  "originHash" : "c180eab64f9bfba069627de46d35fd6e92b6c73b55aafbab1944b08ec2f36336",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Engagecraft-Solutions/gaming-core-ios-dt.git",
       "state" : {
-        "revision" : "74eb4d4121516ba01745b4417601edbaf1855251",
-        "version" : "1.0.10"
+        "revision" : "a51eeaeabb3e6c39ccdc7039fab00b2a9c8d90b5",
+        "version" : "1.0.11"
       }
     },
     {
