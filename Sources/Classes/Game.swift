@@ -2,7 +2,11 @@ import GamesLib
 import UIKit
 import SwiftUI
 
+
+/// 4. Game - provide game Controller.
+/// This is the main entry class to the game. It has to be named Game and conform to GameCard protocol
 class Game: GameCard {
+    /// returns full screen game view controller which is displayed modally fullscreen by the host app
     static func viewController(data: [String : Any]?) -> UIViewController? {
         return UIHostingController(rootView: GameBody())
     }
@@ -10,12 +14,15 @@ class Game: GameCard {
 
 struct GameBody: View {
     @State var user: GHUser?
+    /// GamingHubCards.isLoggedIn returns current  user login state
     @State var isLoggedIn = GamingHubCards.isLoggedIn
     
     var body: some View {
         NavigationStack {
             VStack(spacing: 16){
                 Text("Hello, I'm the game!")
+                
+                /// 1. Environment info: you can always get it by accessing: GamingHubCards.environment
                 Text("Environment: \(GamingHubCards.environment.environment)")
                     .navigationTitle("Fantasy")
                     .toolbar {
@@ -45,6 +52,7 @@ struct GameBody: View {
             
         }
         .onAppear{
+            /// 2. GamingHubCards.user returns a copy current user info (name,  id, avatars, access token)
             user = GamingHubCards.user
         }
         .ghOnLoggedIn {
@@ -73,6 +81,7 @@ struct GameBody: View {
         }
     }
     
+    /// 7. Menu - ask the Host app to open menu ( so user can navigate to other screens on the app)
     /// when user taps menu icon on top left corner of the screen, the game:
     /// - will close in POC
     /// - in final Host app the menu will showup
@@ -80,9 +89,12 @@ struct GameBody: View {
         GamingHubCards.openMenu()
     }
     
-    /// ask host app to authenticate and autorize the user.
+    ///3. Login/registratin flow.  ask host app to authenticate and autorize the user.
     private func requestLogin() {
+        /// start login flow
         GamingHubCards.login("dtfantasy")
+        /// or registration flow
+        //GamingHubCards.register("dtfantasy")
     }
     
     private func authorizeWithGameBackend() {
