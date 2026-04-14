@@ -32,4 +32,34 @@ class ViewController: GHPOCViewController {
         GHIDPManager.auth0.login()
     }
     
+    
+    // MARK: DEEPLINK POC
+    
+    /// deep link usually consists of the following parts:
+    /// domain
+    /// language segment
+    ///  game id  segment - for the host to know to which game the link is addressed
+    ///  extra path segmens/parameters - for internal game logic
+    let deeplink = "https://dreamteam-domain/en/dtfantasy/pathparameters"
+    
+    
+    
+    
+    
+    /// Simulate "game listening" to deep link:
+    /// opens the game
+    /// waits for 3 seconds
+    /// send the deeplink
+    @IBAction func openGameWithDeeplinkDelay(_ sender: Any) {
+        
+        GamingHubCards.open(gameId)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3){
+            NotificationCenter.default.post(name: .ghOpenLink, object: nil, userInfo: ["link": self.deeplink])
+        }
+    }
+    
+    @IBAction func openGameWithDeeplink(_ sender: Any) {
+        GamingHubCards.open(gameId, data: ["link": self.deeplink])
+    }
+    
 }

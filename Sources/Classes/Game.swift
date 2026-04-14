@@ -8,14 +8,24 @@ import SwiftUI
 class Game: GameCard {
     /// returns full screen game view controller which is displayed modally fullscreen by the host app
     static func viewController(data: [String : Any]?) -> UIViewController? {
-        return UIHostingController(rootView: GameBody())
+        return UIHostingController(rootView: GameBody(data: data))
     }
 }
 
 struct GameBody: View {
+    /// initial data passed by the game
+    var data: [String: Any]?
     @State var user: GHUser?
     /// GamingHubCards.isLoggedIn returns current  user login state
     @State var isLoggedIn = GamingHubCards.isLoggedIn
+    
+    init(data: [String: Any]?){
+        self.data = data
+        
+        /// 8. Deeplinking on  game start
+        processDeeplink(data: data)
+        
+    }
     
     var body: some View {
         NavigationStack {
@@ -79,6 +89,17 @@ struct GameBody: View {
             
             clearGameSession()
         }
+        .ghOnNotification(.ghOpenLink) { data in
+            /// 8. Deeplink - listen to depelink in already playing game
+            /// in UIKit:
+            /*
+             NotificationCenter.default.addObserver(self,
+                                                    selector: #selector(onDeepLink(notification:)),
+                                                    name: .ghOpenLink,
+                                                    object: nil)
+             */
+            processDeeplink(data: data as? [String: Any])
+        }
     }
     
     /// 7. Menu - ask the Host app to open menu ( so user can navigate to other screens on the app)
@@ -110,5 +131,13 @@ struct GameBody: View {
         isLoggedIn = GamingHubCards.isLoggedIn
         
         // TODO: Do whatever is needed to clear and reset game flow when user logs out
+    }
+    
+    
+    // process deeplink
+    func processDeeplink(data: [String: Any]?){
+        if let path = data?["link"] as? String, let url = URL(string: path) {
+            print("GAME DEEPLINK to process \(url.absoluteString)")
+        }
     }
 }
