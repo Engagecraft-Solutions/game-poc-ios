@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  dtfantasy
+//  eplhigherlower
 //
 //  Created by Aurimas Petrevicius on 13/04/2026.
 //

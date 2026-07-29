@@ -34,7 +34,7 @@ struct GameBody: View {
                 
                 /// 1. Environment info: you can always get it by accessing: GamingHubCards.environment
                 Text("Environment: \(GamingHubCards.environment.environment)")
-                    .navigationTitle("Fantasy")
+                    .navigationTitle("Higher Lower")
                     .toolbar {
                         ToolbarItem(placement: .topBarLeading) {
                             Button {
@@ -118,9 +118,9 @@ struct GameBody: View {
     ///3. Login/registratin flow.  ask host app to authenticate and autorize the user.
     private func requestLogin() {
         /// start login flow
-        GamingHubCards.login("dtfantasy")
+        GamingHubCards.login("eplhigherlower")
         /// or registration flow
-        //GamingHubCards.register("dtfantasy")
+        //GamingHubCards.register("eplhigherlower")
     }
     
     private func authorizeWithGameBackend() {

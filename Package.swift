@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "dtfantasy",
+    name: "eplhigherlower",
     defaultLocalization: "en",
     platforms: [.iOS(.v17)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(name: "dtfantasy", targets: ["dtfantasy"]),
+        .library(name: "eplhigherlower", targets: ["eplhigherlower"]),
      ],
     dependencies: [
         // Remote dependencies (add yours here)
@@ -19,7 +19,7 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "dtfantasy",
+            name: "eplhigherlower",
             dependencies: [
                   .product(name: "GamesLib", package: "gaming-core-ios-dt"),
             ],

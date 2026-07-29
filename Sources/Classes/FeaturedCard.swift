@@ -42,8 +42,8 @@ struct CardBody: View {
     /// 6. Open Game Request - Featured card asks the Host app to open the game.
     /// ask host app to open the game
     func openGame(){
-        /// ask host to open the game providing game id ("dtfantasy", in this case)
+        /// ask host to open the game providing game id ("eplhigherlower", in this case)
         /// if needed, additional data: [String: Any] can be provided to game
-        GamingHubCards.open("dtfantasy", data: nil)
+        GamingHubCards.open("eplhigherlower", data: nil)
     }
 }

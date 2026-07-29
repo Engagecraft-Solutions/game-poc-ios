@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  dtfantasy
+//  eplhigherlower
 //
 //  Created by Aurimas Petrevicius on 13/04/2026.
 //
@@ -11,7 +11,7 @@ import UIKit
 class ViewController: GHPOCViewController {
 
     override var gameId: String {
-        "dtfantasy"
+        "eplhigherlower"
     }
     var consentManager: SourcePointCM?
     
@@ -51,7 +51,7 @@ class ViewController: GHPOCViewController {
     /// language segment
     ///  game id  segment - for the host to know to which game the link is addressed
     ///  extra path segmens/parameters - for internal game logic
-    let deeplink = "https://dreamteam-domain/en/dtfantasy/pathparameters"
+    let deeplink = "https://dreamteam-domain/en/eplhigherlower/pathparameters"
     
     
     
