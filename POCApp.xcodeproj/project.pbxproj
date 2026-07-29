@@ -12,10 +12,14 @@
 		84388EC62F8D49FC00E83C9D /* dtfantasy in Frameworks */ = {isa = PBXBuildFile; productRef = 84388EC52F8D49FC00E83C9D /* dtfantasy */; };
 		84388ECC2F8D625100E83C9D /* GHMainTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 84388ECB2F8D625100E83C9D /* GHMainTheme */; };
 		84388ECE2F8D625100E83C9D /* GamesLib in Frameworks */ = {isa = PBXBuildFile; productRef = 84388ECD2F8D625100E83C9D /* GamesLib */; };
+		845F96E62FBF4C0B00158F41 /* GHMainTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 845F96E52FBF4C0B00158F41 /* GHMainTheme */; };
+		845F96E82FBF4C0B00158F41 /* GamesLib in Frameworks */ = {isa = PBXBuildFile; productRef = 845F96E72FBF4C0B00158F41 /* GamesLib */; };
+		845F99312FC04E9700158F41 /* GHMainTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 845F99302FC04E9700158F41 /* GHMainTheme */; };
+		845F99332FC04E9700158F41 /* GamesLib in Frameworks */ = {isa = PBXBuildFile; productRef = 845F99322FC04E9700158F41 /* GamesLib */; };
 		847976F22F8D688900E17216 /* GHMainTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 847976F12F8D688900E17216 /* GHMainTheme */; };
 		847976F42F8D688900E17216 /* GamesLib in Frameworks */ = {isa = PBXBuildFile; productRef = 847976F32F8D688900E17216 /* GamesLib */; };
-		847976F72F8D6E8700E17216 /* GHMainTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 847976F62F8D6E8700E17216 /* GHMainTheme */; };
-		847976F92F8D6E8700E17216 /* GamesLib in Frameworks */ = {isa = PBXBuildFile; productRef = 847976F82F8D6E8700E17216 /* GamesLib */; };
+		848308F72FBF4B2D007BE058 /* GHMainTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 848308F62FBF4B2D007BE058 /* GHMainTheme */; };
+		848308F92FBF4B2D007BE058 /* GamesLib in Frameworks */ = {isa = PBXBuildFile; productRef = 848308F82FBF4B2D007BE058 /* GamesLib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,15 +52,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847976F92F8D6E8700E17216 /* GamesLib in Frameworks */,
 				84388EBD2F8D33B700E83C9D /* GamesLib in Frameworks */,
 				84388EC62F8D49FC00E83C9D /* dtfantasy in Frameworks */,
-				847976F72F8D6E8700E17216 /* GHMainTheme in Frameworks */,
+				845F96E62FBF4C0B00158F41 /* GHMainTheme in Frameworks */,
+				845F99332FC04E9700158F41 /* GamesLib in Frameworks */,
 				847976F22F8D688900E17216 /* GHMainTheme in Frameworks */,
 				84388ECC2F8D625100E83C9D /* GHMainTheme in Frameworks */,
 				84388ECE2F8D625100E83C9D /* GamesLib in Frameworks */,
+				845F96E82FBF4C0B00158F41 /* GamesLib in Frameworks */,
 				84388EBB2F8D33B700E83C9D /* GHMainTheme in Frameworks */,
 				847976F42F8D688900E17216 /* GamesLib in Frameworks */,
+				848308F92FBF4B2D007BE058 /* GamesLib in Frameworks */,
+				845F99312FC04E9700158F41 /* GHMainTheme in Frameworks */,
+				848308F72FBF4B2D007BE058 /* GHMainTheme in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +122,12 @@
 				84388ECD2F8D625100E83C9D /* GamesLib */,
 				847976F12F8D688900E17216 /* GHMainTheme */,
 				847976F32F8D688900E17216 /* GamesLib */,
-				847976F62F8D6E8700E17216 /* GHMainTheme */,
-				847976F82F8D6E8700E17216 /* GamesLib */,
+				848308F62FBF4B2D007BE058 /* GHMainTheme */,
+				848308F82FBF4B2D007BE058 /* GamesLib */,
+				845F96E52FBF4C0B00158F41 /* GHMainTheme */,
+				845F96E72FBF4C0B00158F41 /* GamesLib */,
+				845F99302FC04E9700158F41 /* GHMainTheme */,
+				845F99322FC04E9700158F41 /* GamesLib */,
 			);
 			productName = dtfantasy;
 			productReference = 84388EA12F8D331100E83C9D /* POCfantasy.app */;
@@ -147,7 +159,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				84388EC42F8D49FC00E83C9D /* XCLocalSwiftPackageReference "../dtfantasy" */,
-				847976F52F8D6E8700E17216 /* XCRemoteSwiftPackageReference "gaming-core-ios-dt" */,
+				845F992F2FC04E9700158F41 /* XCRemoteSwiftPackageReference "gaming-core-ios-dt" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 84388EA22F8D331100E83C9D /* Products */;
@@ -396,12 +408,12 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		847976F52F8D6E8700E17216 /* XCRemoteSwiftPackageReference "gaming-core-ios-dt" */ = {
+		845F992F2FC04E9700158F41 /* XCRemoteSwiftPackageReference "gaming-core-ios-dt" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Engagecraft-Solutions/gaming-core-ios-dt.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.10;
+				minimumVersion = 1.0.20;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -427,6 +439,24 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = GamesLib;
 		};
+		845F96E52FBF4C0B00158F41 /* GHMainTheme */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GHMainTheme;
+		};
+		845F96E72FBF4C0B00158F41 /* GamesLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GamesLib;
+		};
+		845F99302FC04E9700158F41 /* GHMainTheme */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845F992F2FC04E9700158F41 /* XCRemoteSwiftPackageReference "gaming-core-ios-dt" */;
+			productName = GHMainTheme;
+		};
+		845F99322FC04E9700158F41 /* GamesLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845F992F2FC04E9700158F41 /* XCRemoteSwiftPackageReference "gaming-core-ios-dt" */;
+			productName = GamesLib;
+		};
 		847976F12F8D688900E17216 /* GHMainTheme */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GHMainTheme;
@@ -435,14 +465,12 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = GamesLib;
 		};
-		847976F62F8D6E8700E17216 /* GHMainTheme */ = {
+		848308F62FBF4B2D007BE058 /* GHMainTheme */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 847976F52F8D6E8700E17216 /* XCRemoteSwiftPackageReference "gaming-core-ios-dt" */;
 			productName = GHMainTheme;
 		};
-		847976F82F8D6E8700E17216 /* GamesLib */ = {
+		848308F82FBF4B2D007BE058 /* GamesLib */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 847976F52F8D6E8700E17216 /* XCRemoteSwiftPackageReference "gaming-core-ios-dt" */;
 			productName = GamesLib;
 		};
 /* End XCSwiftPackageProductDependency section */

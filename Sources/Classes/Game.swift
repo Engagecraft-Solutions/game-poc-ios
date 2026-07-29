@@ -148,6 +148,6 @@ struct GameBody: View {
     
     /// ask Host to open (process) the a link
     func openLink(){
-        GamingHubCards.openDeepLink("https://dreamteam.com/en/article/id")
+        GamingHubCards.openDeepLink("https://dreamteam.com/en/dtfantasy/idasdfjhaefhewaihfoiewqagfh")
     }
 }

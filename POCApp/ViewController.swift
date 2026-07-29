@@ -13,10 +13,21 @@ class ViewController: GHPOCViewController {
     override var gameId: String {
         "dtfantasy"
     }
+    var consentManager: SourcePointCM?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        consentManager = SourcePointCM()
+        consentManager?.startPOC()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        consentManager?.checkAndOpen(in: self) {
+            print("user Consent \(AdsConsentManager.consent)")
+        }
     }
 
     

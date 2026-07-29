@@ -24,8 +24,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Engagecraft-Solutions/gaming-core-ios-dt.git",
       "state" : {
-        "revision" : "a51eeaeabb3e6c39ccdc7039fab00b2a9c8d90b5",
-        "version" : "1.0.11"
+        "revision" : "7944eeb4fc269363cdde8796730268b9b44e7133",
+        "version" : "1.0.20"
+      }
+    },
+    {
+      "identity" : "ios-cmp-app",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SourcePointUSA/ios-cmp-app",
+      "state" : {
+        "revision" : "4e9be6ae222e827c181ef4c3ba2dfbe017ef6463",
+        "version" : "7.12.9"
       }
     },
     {
@@ -62,6 +71,15 @@
       "state" : {
         "revision" : "af76cf3ef710b6ca5f8c05f3a31307d44a3c5828",
         "version" : "5.0.2"
+      }
+    },
+    {
+      "identity" : "tealium-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tealium/tealium-swift",
+      "state" : {
+        "revision" : "0c902201dba1c1904e8dad43abd2a5678f637323",
+        "version" : "2.18.3"
       }
     }
   ],

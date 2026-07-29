@@ -13,7 +13,7 @@ let package = Package(
      ],
     dependencies: [
         // Remote dependencies (add yours here)
-          .package(url: "https://github.com/Engagecraft-Solutions/gaming-core-ios-dt.git", from: "1.0.11"),
+          .package(url: "https://github.com/Engagecraft-Solutions/gaming-core-ios-dt.git", from: "1.0.20"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
