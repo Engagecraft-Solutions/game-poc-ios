@@ -11,6 +11,7 @@
 		84388EBD2F8D33B700E83C9D /* GamesLib in Frameworks */ = {isa = PBXBuildFile; productRef = 84388EBC2F8D33B700E83C9D /* GamesLib */; };
 		84388ECC2F8D625100E83C9D /* GHMainTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 84388ECB2F8D625100E83C9D /* GHMainTheme */; };
 		84388ECE2F8D625100E83C9D /* GamesLib in Frameworks */ = {isa = PBXBuildFile; productRef = 84388ECD2F8D625100E83C9D /* GamesLib */; };
+		8448A94A302DDDDE00243B03 /* epllastmanstanding in Frameworks */ = {isa = PBXBuildFile; productRef = 8448A949302DDDDE00243B03 /* epllastmanstanding */; };
 		845F96E62FBF4C0B00158F41 /* GHMainTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 845F96E52FBF4C0B00158F41 /* GHMainTheme */; };
 		845F96E82FBF4C0B00158F41 /* GamesLib in Frameworks */ = {isa = PBXBuildFile; productRef = 845F96E72FBF4C0B00158F41 /* GamesLib */; };
 		845F99312FC04E9700158F41 /* GHMainTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 845F99302FC04E9700158F41 /* GHMainTheme */; };
@@ -19,7 +20,6 @@
 		847976F42F8D688900E17216 /* GamesLib in Frameworks */ = {isa = PBXBuildFile; productRef = 847976F32F8D688900E17216 /* GamesLib */; };
 		848308F72FBF4B2D007BE058 /* GHMainTheme in Frameworks */ = {isa = PBXBuildFile; productRef = 848308F62FBF4B2D007BE058 /* GHMainTheme */; };
 		848308F92FBF4B2D007BE058 /* GamesLib in Frameworks */ = {isa = PBXBuildFile; productRef = 848308F82FBF4B2D007BE058 /* GamesLib */; };
-		84F33C2E3019CB6C00545BE6 /* eplhigherlower in Frameworks */ = {isa = PBXBuildFile; productRef = 84F33C2D3019CB6C00545BE6 /* eplhigherlower */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,13 +56,13 @@
 				845F96E62FBF4C0B00158F41 /* GHMainTheme in Frameworks */,
 				845F99332FC04E9700158F41 /* GamesLib in Frameworks */,
 				847976F22F8D688900E17216 /* GHMainTheme in Frameworks */,
+				8448A94A302DDDDE00243B03 /* epllastmanstanding in Frameworks */,
 				84388ECC2F8D625100E83C9D /* GHMainTheme in Frameworks */,
 				84388ECE2F8D625100E83C9D /* GamesLib in Frameworks */,
 				845F96E82FBF4C0B00158F41 /* GamesLib in Frameworks */,
 				84388EBB2F8D33B700E83C9D /* GHMainTheme in Frameworks */,
 				847976F42F8D688900E17216 /* GamesLib in Frameworks */,
 				848308F92FBF4B2D007BE058 /* GamesLib in Frameworks */,
-				84F33C2E3019CB6C00545BE6 /* eplhigherlower in Frameworks */,
 				845F99312FC04E9700158F41 /* GHMainTheme in Frameworks */,
 				848308F72FBF4B2D007BE058 /* GHMainTheme in Frameworks */,
 			);
@@ -127,7 +127,7 @@
 				845F96E72FBF4C0B00158F41 /* GamesLib */,
 				845F99302FC04E9700158F41 /* GHMainTheme */,
 				845F99322FC04E9700158F41 /* GamesLib */,
-				84F33C2D3019CB6C00545BE6 /* eplhigherlower */,
+				8448A949302DDDDE00243B03 /* epllastmanstanding */,
 			);
 			productName = dtfantasy;
 			productReference = 84388EA12F8D331100E83C9D /* POCfantasy.app */;
@@ -158,8 +158,8 @@
 			mainGroup = 84388E982F8D331100E83C9D;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				84388EC42F8D49FC00E83C9D /* XCLocalSwiftPackageReference "../dtfantasy" */,
 				845F992F2FC04E9700158F41 /* XCRemoteSwiftPackageReference "gaming-core-ios-dt" */,
+				8448A948302DDDDE00243B03 /* XCLocalSwiftPackageReference "../dtfantasy" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 84388EA22F8D331100E83C9D /* Products */;
@@ -401,7 +401,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		84388EC42F8D49FC00E83C9D /* XCLocalSwiftPackageReference "../dtfantasy" */ = {
+		8448A948302DDDDE00243B03 /* XCLocalSwiftPackageReference "../dtfantasy" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../dtfantasy;
 		};
@@ -434,6 +434,10 @@
 		84388ECD2F8D625100E83C9D /* GamesLib */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GamesLib;
+		};
+		8448A949302DDDDE00243B03 /* epllastmanstanding */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = epllastmanstanding;
 		};
 		845F96E52FBF4C0B00158F41 /* GHMainTheme */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -468,11 +472,6 @@
 		848308F82FBF4B2D007BE058 /* GamesLib */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GamesLib;
-		};
-		84F33C2D3019CB6C00545BE6 /* eplhigherlower */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 84388EC42F8D49FC00E83C9D /* XCLocalSwiftPackageReference "../dtfantasy" */;
-			productName = eplhigherlower;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

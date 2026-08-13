@@ -34,7 +34,7 @@ struct GameBody: View {
                 
                 /// 1. Environment info: you can always get it by accessing: GamingHubCards.environment
                 Text("Environment: \(GamingHubCards.environment.environment)")
-                    .navigationTitle("Higher Lower")
+                    .navigationTitle("Last Man Standing")
                     .toolbar {
                         ToolbarItem(placement: .topBarLeading) {
                             Button {
@@ -118,9 +118,9 @@ struct GameBody: View {
     ///3. Login/registratin flow.  ask host app to authenticate and autorize the user.
     private func requestLogin() {
         /// start login flow
-        GamingHubCards.login("eplhigherlower")
+        GamingHubCards.login("epllastmanstanding")
         /// or registration flow
-        //GamingHubCards.register("eplhigherlower")
+        //GamingHubCards.register("epllastmanstanding")
     }
     
     private func authorizeWithGameBackend() {
@@ -148,6 +148,6 @@ struct GameBody: View {
     
     /// ask Host to open (process) the a link
     func openLink(){
-        GamingHubCards.openDeepLink("https://dreamteam.com/en/dtfantasy/idasdfjhaefhewaihfoiewqagfh")
+        GamingHubCards.openDeepLink("https://dreamteam.com/en/epllastmanstanding/idasdfjhaefhewaihfoiewqagfh")
     }
 }

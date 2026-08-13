@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  eplhigherlower
+//  epllastmanstanding
 //
 //  Created by Aurimas Petrevicius on 13/04/2026.
 //
@@ -11,7 +11,7 @@ import UIKit
 class ViewController: GHPOCViewController {
 
     override var gameId: String {
-        "eplhigherlower"
+        "epllastmanstanding"
     }
     var consentManager: SourcePointCM?
     
